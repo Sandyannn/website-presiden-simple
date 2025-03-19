@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presiden Soeharto dan Soedharmono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        nav ul li a {
+            color: #f4f4f4;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: #2c3e50;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .data {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            margin: 15px auto;
+            padding: 15px;
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 5% cover 25%;
+            transition: transform 0.3s;
+        }
+
+        .data:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 22px;
+        }
+
+        p,
+        ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 230px;
+            max-width: 180px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            transition: transform 0.3s;
+        }
+
+        .profile img:hover {
+            transform: translateY(-5px);
+        }
+
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgb(0, 0, 0);
+            transition: transform 0.2s;
+        }
+
+        #backToTop:hover {
+            background-color: #34495e;
+            transform: scale(1.1);
+        }
+
+        #backToTop:active {
+            background-color: #2c3e50;
+            transform: scale(1);
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin-bottom: 5px;
+            }
+
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Presiden Soeharto & Wakil Soedharmono</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#ideologi">Ideologi</a></li>
+            <li><a href="#politik">Politik</a></li>
+            <li><a href="#ekonomi">Ekonomi</a></li>
+            <li><a href="#sosial">Sosial</a></li>
+            <li><a href="#pertahanan">Pertahanan</a></li>
+            <li><a href="#keamanan">Keamanan</a></li>
+            <li><a href="#budaya">Budaya</a></li>
+            <li><a href="#prestasi">Prestasi</a></li>
+            <li><a href="#kelebihan">Kelebihan</a></li>
+            <li><a href="#kekurangan">Kekurangan</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="profil">
+            <div class="profile-container">
+                <div class="profile">
+                    <img src="images/soeharto.jpg" alt="Presiden Soeharto">
+                    <h3>Presiden Soeharto</h3>
+                </div>
+                <div class="profile">
+                    <img src="images/soedharmono.jpg" alt="Wakil Presiden Soedharmono">
+                    <h3>Wakil Presiden Soedharmono</h3>
+                </div>
+            </div>
+        </section>
+
+        <div class="data">
+            <section id="ideologi">
+                <h2>Ideologi</h2>
+                <p>Pada masa pemerintahan Presiden Soeharto (1967-1998), ideologi yang dipegang teguh adalah Pancasila.
+                    Pemerintahannya sering disebut sebagai Orde Baru, yang menekankan stabilitas nasional dan
+                    pembangunan ekonomi.</p>
+                <p>🔹 Pancasila sebagai Ideologi Negara <br>
+                    - Soeharto menegaskan bahwa Pancasila adalah satu-satunya asas dalam kehidupan berpolitik dan
+                    berorganisasi. <br>
+                    - Semua partai politik dan organisasi masyarakat dipaksa untuk berasaskan Pancasila melalui
+                    Undang-Undang No. 3 Tahun 1985. <br>
+                </p>
+                <p>🔹 Depolitisasi Rakyat <br>
+                    - Rakyat dijauhkan dari aktivitas politik demi stabilitas. <br>
+                    - Kritik terhadap pemerintah dibatasi dan diawasi. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="politik">
+                <h2>Politik</h2>
+                <p>🔹 Pemilu dan Politik Satu Arah <br>
+                    - Pemilu dilaksanakan setiap 5 tahun sekali, tetapi selalu dimenangkan oleh Golkar. <br>
+                    - Partai politik dibatasi hanya menjadi 3 partai: <br>
+                    1. Golkar (didukung pemerintah) <br>
+                    2. PPP (Partai Persatuan Pembangunan) <br>
+                    3. PDI (Partai Demokrasi Indonesia) <br>
+                </p>
+                <p>🔹 Militer dalam Politik (Dwi Fungsi ABRI) <br>
+                    - Militer tidak hanya bertugas di bidang pertahanan, tetapi juga diberi jabatan di pemerintahan.
+                    <br>
+                    - ABRI (sekarang TNI) mendukung stabilitas politik dan keamanan. <br>
+                </p>
+                <p>🔹 Pemerintahan Otoriter <br>
+                    - Soeharto menggunakan kekuasaan untuk membungkam oposisi dan mengontrol media. <br>
+                    - Kritik terhadap pemerintah bisa berujung pemenjaraan atau pembredelan media. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="ekonomi">
+                <h2>Ekonomi</h2>
+                <p>Ekonomi Indonesia mengalami pertumbuhan pesat di awal pemerintahan Soeharto, tetapi juga mengalami
+                    krisis besar pada 1997-1998.</p>
+                <p>🔹 Keberhasilan Ekonomi <br>
+                    - Indonesia mencapai swasembada pangan (tahun 1984). <br>
+                    - Pertumbuhan ekonomi stabil di angka 7% per tahun (1980-an). <br>
+                    - Pembangunan besar-besaran di bidang infrastruktur, pendidikan, dan industri. <br>
+                </p>
+                <p>🔹 Masalah Ekonomi <br>
+                    - Ketimpangan sosial makin tinggi. <br>
+                    - Ekonomi bergantung pada utang luar negeri. <br>
+                    - Korupsi merajalela, terutama di keluarga Cendana (keluarga Soeharto). <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="sosial">
+                <h2>Sosial</h2>
+                <p>🔹 Program Keluarga Berencana (KB) <br>
+                    - Program KB sukses menurunkan angka kelahiran. <br>
+                    - Slogan terkenal: "Dua Anak Cukup".<br>
+                </p>
+                <p>🔹 Urbanisasi & Pembangunan Kota <br>
+                    - Kota-kota besar seperti Jakarta, Surabaya, dan Bandung berkembang pesat. <br>
+                    - Banyak orang pindah dari desa ke kota untuk mencari pekerjaan. <br>
+                </p>
+                <p>🔹 Kebebasan Berpendapat Dibatasi <br>
+                    - Kritik terhadap pemerintah sulit dilakukan. <br>
+                    - Banyak aktivis dan jurnalis ditangkap atau dipenjara. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="pertahanan">
+                <h2>Pertahanan</h2>
+                <p>🔹 Dwi Fungsi ABRI <br>
+                    - Militer bukan hanya menjaga pertahanan negara tetapi juga terlibat dalam politik dan pemerintahan.
+                    <br>
+                </p>
+                <p>
+                    🔹 Operasi Militer di Daerah Konflik <br>
+                    - Timor Timur (1975-1999): Indonesia mengklaim Timor Timur sebagai bagian dari NKRI, tetapi terjadi
+                    perlawanan rakyat. <br>
+                    - Gerakan Aceh Merdeka (GAM): Pemerintah menerapkan operasi militer untuk menghentikan gerakan
+                    separatis. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="keamanan">
+                <h2>Keamanan</h2>
+                <p>🔹 Pemerintahan Otoriter <br>
+                    - Kritik terhadap pemerintah dianggap subversif dan bisa dihukum. <br>
+                    - Banyak aktivis yang diculik dan hilang (terutama menjelang kejatuhan Soeharto tahun 1998). <br>
+                </p>
+                <p>
+                    🔹 Penyebaran Intelijen di Masyarakat <br>
+                    - Ada organisasi seperti KOPKAMTIB (Komando Operasi Pemulihan Keamanan dan Ketertiban) yang bertugas
+                    memantau rakyat. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="budaya">
+                <h2>Budaya (Pendidikan & Agama)</h2>
+                <p>
+                    🔹 Pendidikan <br>
+                    - Wajib Belajar 6 Tahun mulai diterapkan. <br>
+                    - Dibangun banyak sekolah dan perguruan tinggi. <br>
+                    - Mata pelajaran Pendidikan Moral Pancasila (PMP) diwajibkan. <br>
+                </p>
+                <p>
+                    🔹 Agama <br>
+                    - Soeharto mulai mendekati kelompok Islam pada 1990-an. <br>
+                    - Didirikan ICMI (Ikatan Cendekiawan Muslim Indonesia). <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="prestasi">
+                <h2>Prestasi</h2>
+                <p>
+                    - Swasembada pangan (1984). <br>
+                    - Ekonomi stabil dan pertumbuhan tinggi (1980-an). <br>
+                    - Pembangunan infrastruktur besar-besaran (jalan tol, bendungan, sekolah, dll.). <br>
+                    - Angka kemiskinan turun dari 60% (1967) menjadi 11% (1996). <br>
+                    - Pendidikan dan angka melek huruf meningkat. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="kelebihan">
+                <h2>Kelebihan</h2>
+                <p>
+                    - Pembangunan ekonomi yang cepat & stabil (terutama 1970-1980). <br>
+                    - Pembangunan infrastruktur besar (jalan tol, bandara, sekolah, dll.). <br>
+                    - Swasembada pangan berhasil. <br>
+                    - Stabilitas politik & keamanan cukup terjaga. <br>
+                </p>
+            </section>
+        </div>
+
+        <div class="data">
+            <section id="kekurangan">
+                <h2>Kekurangan</h2>
+                <p>
+                    - Sistem pemerintahan otoriter (kritik terhadap pemerintah dilarang). <br>
+                    - Korupsi merajalela (terutama di keluarga Soeharto & kroninya). <br>
+                    - Krisis ekonomi 1997-1998 menghancurkan ekonomi Indonesia. <br>
+                    - Ketimpangan ekonomi meningkat, rakyat miskin tetap sulit sejahtera. <br>
+                    - Pelanggaran HAM berat, termasuk penculikan aktivis & tragedi 1998. <br>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ryan Sandy Pratama & Muhammad Taufiq Riza XI RPL 2</p>
+    </footer>
+
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function () {
+            let button = document.getElementById("backToTop");
+            if (document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
+</html>
